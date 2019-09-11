@@ -59,9 +59,9 @@ Category = Filesystems
        [[[configuration cyclecloud.exports.sched]]]
        disabled = true
 
-       [[[configuration cyclecloud.exports.nfs_data]]]
+       [[[configuration cyclecloud.exports.nfs_ref]]]
        type = nfs
-       export_path = /mnt/exports/data
+       export_path = /mnt/ref
       
        [[[cluster-init cyclecloud/nfs:default:1.0.0]]]
         
