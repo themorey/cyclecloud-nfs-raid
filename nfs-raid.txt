@@ -50,7 +50,7 @@ Category = Filesystems
 
        [[[configuration cyclecloud.mounts.ref]]]
        mountpoint = /mnt/ref
-       fs_type = $FileSystenType
+       fs_type = $FileSystemType
        raid_level = 0
 
        [[[configuration cyclecloud.exports.shared]]]
