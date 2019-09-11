@@ -32,21 +32,25 @@ Category = Filesystems
         Size = ${FilesystemSize/4}
         SSD = true
         Mount = ref
+        Persistent = $FileSystemPersistence        
 
         [[[volume vol2]]]
         Size = ${FilesystemSize/4}
         SSD = true
         Mount = ref
+        Persistent = $FileSystemPersistence        
 
         [[[volume vol3]]]
         Size = ${FilesystemSize/4}
         SSD = true
         Mount = ref
+        Persistent = $FileSystemPersistence        
 
        [[[volume vol4]]]
         Size = ${FilesystemSize/4}
         SSD = true
         Mount = ref
+        Persistent = $FileSystemPersistence
 
        [[[configuration cyclecloud.mounts.ref]]]
        mountpoint = /mnt/ref
@@ -161,6 +165,17 @@ Order = 20
             [[[[list Config.Entries]]]]
             Name = ext4
             Label = ext4
+
+        [[[parameter FileSystemPersistence]]]
+        Label = Filesystem Persistence
+        DefaultValue = true
+        Config.Plugin = pico.form.RadioButtonsControl
+            [[[[list Config.Entries]]]]
+            Name = false
+            Label = Ephemeral
+            [[[[list Config.Entries]]]]
+            Name = true
+            Label = Persistent
 
     [[parameters Software]]
     Description = "Specify the scheduling software, and base OS installed on all nodes, and optionally the cluster-init and chef versions from your Locker."
