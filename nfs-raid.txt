@@ -31,30 +31,26 @@ Category = Filesystems
        [[[volume vol1]]]
         Size = ${FilesystemSize/4}
         SSD = true
-#        VolumeId = vol-1234abcd
         Mount = ref
 
         [[[volume vol2]]]
         Size = ${FilesystemSize/4}
         SSD = true
-#        VolumeId = vol-5678abcd
         Mount = ref
 
         [[[volume vol3]]]
         Size = ${FilesystemSize/4}
         SSD = true
-#        VolumeId = vol-abcd1234
         Mount = ref
 
        [[[volume vol4]]]
         Size = ${FilesystemSize/4}
         SSD = true
-#        VolumeId = vol-abcd5678
         Mount = ref
 
        [[[configuration cyclecloud.mounts.ref]]]
-       mouhtpoint = /mnt/ref
-       fs_type = $FileSystemType
+       mountpoint = /mnt/ref
+       fs_type = $FileSystenType
        raid_level = 0
 
        [[[configuration cyclecloud.exports.shared]]]
