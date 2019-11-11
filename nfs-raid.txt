@@ -5,9 +5,9 @@
 [cluster NFS-RAID]
 FormLayout = selectionpanel
 Category = Filesystems
+IconUrl = https://pbs.twimg.com/profile_images/474207371669946368/RxT8lNSK_400x400.jpeg
 
     [[node defaults]]
-
     Credentials = $Credentials    
     ImageName = $ImageName
     SubnetId = $SubnetId
